@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require "little_math/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "Little Math Routines"
+  spec.name          = "little_math_routines"
   spec.version       = LittleMath::VERSION
   spec.authors       = ["heri"]
   spec.email         = ["heri@studiozenkai.com"]
@@ -36,7 +36,7 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency "helix_runtime", "~> 0.5.0"
   spec.add_development_dependency "benchmark-ips", "~> 2.7"
-  spec.add_development_dependency "bundler", "~> 2.2.33"
+  spec.add_development_dependency "bundler", "~> 2.5.11"
   spec.add_development_dependency "rake", "~> 12.3.3"
   spec.add_development_dependency "rspec", "~> 3.0"
 end

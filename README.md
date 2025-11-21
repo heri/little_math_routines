@@ -10,7 +10,7 @@ https://studiozenkai.com/post/the-little-things-matter/
 * Haversine Distance - Distance between points on the Earth's surface.
 
 ```Ruby
-require 'LittleMath'
+require 'little_math'
 
 math = LittleMath.new
 coord1 = [40.7128, -74.0060] # New York City
@@ -51,9 +51,8 @@ y_values = [10.0, 20.0, 30.0, 40.0]
 
 model = math.linear_reg(x_values, y_values)
 
-# Extract coefficients
-intercept = model[0]
-coefficient = model[1]
+# Extract coefficients (returns [intercept, coefficient])
+intercept, coefficient = model
 
 puts "Linear Regression Model: y = #{coefficient}x + #{intercept}"
 

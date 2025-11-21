@@ -1,10 +1,12 @@
 [package]
 name = "little_math_routines"
-version = "0.1.1"
+version = "0.1.2"
 authors = ["heri<heri@studiozenkai.com>"]
 
 [lib]
-rand = "*"
+name = "little_math"
+crate-type = ["cdylib"]
 
 [dependencies]
 helix = "0.5.0"
+libc = "0.2"
